@@ -7,8 +7,8 @@ import { HeaderWrapper, HeaderSide, HeaderText } from './styles';
 const Header = ({ urlLogo, text }: HeaderProps) => (
   <HeaderWrapper>
     <HeaderSide style={{ cursor: 'pointer'}}>
-      <Link href='/'>
-          <Image src={urlLogo} width="85" height="85" />
+      <Link href='/' passHref>
+          <Image src={urlLogo} width="85" height="85" alt='Header Logo'/>
       </Link>
     </HeaderSide>
     <HeaderSide>
