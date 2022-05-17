@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Content should render successfully 1`] = `
+<DocumentFragment>
+  <section
+    class="styles__ContentContainer-sc-773toi-0 dKzdKd"
+  >
+    <div
+      class="styles__CardSection-sc-1d2ydxg-1 kIIQyV"
+    >
+      <div
+        class="styles__CardContainer-sc-tyfa84-0 ominj"
+      >
+        <div
+          class="styles__ImageContainer-sc-tyfa84-1 grvmgA"
+        >
+          <div
+            style="display: block; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
+          >
+            <div
+              style="display: block; box-sizing: border-box; padding-top: 100%;"
+            />
+            <img
+              alt="Rick Sanchez"
+              data-nimg="responsive"
+              decoding="async"
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+              style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+            />
+            <noscript />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</DocumentFragment>
+`;

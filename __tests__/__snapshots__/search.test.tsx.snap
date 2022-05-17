@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Search should placeholder text ok 1`] = `
+<input
+  class="styles__SearchInput-sc-1xiurla-1 dQGEEo"
+  data-testid="search"
+  placeholder="Search character by name"
+  type="text"
+  value=""
+/>
+`;
+
+exports[`Search should render successfully 1`] = `
+<DocumentFragment>
+  <form
+    class="styles__SearchContainer-sc-1xiurla-0 cSNHGB"
+  >
+    <input
+      class="styles__SearchInput-sc-1xiurla-1 dQGEEo"
+      data-testid="search"
+      placeholder="Search character by name"
+      type="text"
+      value=""
+    />
+  </form>
+</DocumentFragment>
+`;
