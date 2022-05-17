@@ -4,7 +4,6 @@ import ButtonLink from '../Button/ButtonLink';
 
 const Filter = () => (
   <FilterWrapper>
-    <FilterTitle>Filters</FilterTitle>
     <Search />
     <FilterOption>
       <ButtonLink href={'/characters'} text="Characters" />

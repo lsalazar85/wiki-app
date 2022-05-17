@@ -14,14 +14,7 @@ export const FilterWrapper = styled.div`
   }
 
   @media (min-width: 768px) {
-    flex: 20rem;
-  }
-`;
-
-export const FilterTitle = styled.div`
-  @media (min-width: 320px) {
-    font-size: 1.3rem;
-    margin-bottom: 0.5rem;
+    width: 22rem;
   }
 `;
 

@@ -3,17 +3,16 @@ import colors from '../../styles/colors';
 
 export const SearchContainer = styled.form`
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
-
+  
   @media(min-width: 320px){
     margin-bottom: 1rem;
   }
   
+  
   @media(min-width: 768px){
-    margin-bottom: 3rem;
     padding: 1rem 0;
   }
 `
@@ -28,7 +27,6 @@ export const SearchInput = styled.input`
   text-align: center;
   margin-right: 1rem;
   border: 3px solid ${colors.SalmonSecondary};
-  margin-bottom: 1rem;
   
   @media(min-width: 320px){
     width: 70%;

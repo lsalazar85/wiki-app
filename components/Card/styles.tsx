@@ -6,6 +6,7 @@ export const CardWrapper = styled.div`
   display: flex;
   border-radius: 0.5rem;
   border: 1px solid ${colors.Orange};
+  max-height: 10rem;
 
   @media (min-width: 320px) {
     width: 100%;
