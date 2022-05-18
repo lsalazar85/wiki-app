@@ -14,7 +14,7 @@ export const FilterWrapper = styled.div`
   }
 
   @media (min-width: 768px) {
-    width: 22rem;
+    width: 20rem;
     border-right: 1px solid ${colors.Orange};
   }
 `;
