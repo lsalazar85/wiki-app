@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 import List from '../../components/List';
-import Index from '../../components/Card/CharacterCard';
+import CharacterCard from '../../components/Card/CharacterCard';
 import Loader from '../../components/Loader';
 
 import { useCharactersByPage } from '../../hooks/useCharactersByPage';
@@ -26,7 +26,7 @@ const Characters = () => {
     <List onScroll={(e) => handleScroll(e, handleAddGrids, fetchNextPage)}>
       <>
         {flatCharactersData?.slice(0, gridItems).map((data) => (
-          <Index key={data.id} data={data} />
+          <CharacterCard key={data.id} data={data} />
         ))}
       </>
     </List>

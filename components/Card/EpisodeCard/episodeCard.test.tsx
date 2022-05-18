@@ -1,6 +1,6 @@
 import { render } from "@testing-library/react";
 import EpisodeCard from "./index";
-import { mockTestEpisode } from "../mockTest";
+import { mockTestEpisode } from "../../../mocks/mockTest";
 
 describe("EpisodeCard", () => {
   it("should render successfully", () => {

@@ -1,4 +1,4 @@
-import { URL_LOADER_IMG } from "../../constants/urls";
+import { URL_LOADER_IMG } from "../constants/urls";
 
 export const mockTestCharacter = {
   id: "1",
