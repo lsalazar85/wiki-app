@@ -1,10 +1,10 @@
 import { useState } from 'react';
-import { CardWrapper, CardInfo, Name, ItemInfo } from '../../../../components/Card/styles';
+import { CardWrapper, CardInfo, Name, ItemInfo } from '../styles';
 
-import Modal from '../../../../components/Modal';
-import ModalCharactersList from '../../../characters/components/CharacterCard/ModalCharacters';
+import Modal from '../../Modal';
+import ModalCharactersList from '../CharacterCard/ModalCharacters';
 
-import { EpisodeCardProps } from '../../../../interfaces';
+import { EpisodeCardProps } from '../../../interfaces';
 
 const EpisodeCard = ({ data }: EpisodeCardProps) => {
   const [modalState, setModalState] = useState<boolean>(false);

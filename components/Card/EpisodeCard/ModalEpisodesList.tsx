@@ -1,6 +1,6 @@
-import { DetailsList, DetailText } from '../../../../components/Card/styles';
-import { ModalListProps } from '../../../../interfaces'
-import { useEpisodesByCharacter } from '../../../../hooks/useEpisodesByCharacter'
+import { DetailsList, DetailText } from '../styles';
+import { ModalListProps } from '../../../interfaces'
+import { useEpisodesByCharacter } from '../../../hooks/useEpisodesByCharacter'
 
 const ModalEpisodesList = ({ id }: ModalListProps) => {
   const { data } = useEpisodesByCharacter(`${id}`)

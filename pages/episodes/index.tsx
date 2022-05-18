@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 import List from '../../components/List';
-import EpisodeCard from './components/EpisodeCard';
+import EpisodeCard from '../../components/Card/EpisodeCard';
 import Loader from '../../components/Loader';
 
 import { useEpisodesByPage } from '../../hooks/useEpisodesByPage';

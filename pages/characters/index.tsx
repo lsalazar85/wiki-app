@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 import List from '../../components/List';
-import CharacterCard from './components/CharacterCard';
+import CharacterCard from '../../components/Card/CharacterCard';
 import Loader from '../../components/Loader';
 
 import { useCharactersByPage } from '../../hooks/useCharactersByPage';

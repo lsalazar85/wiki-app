@@ -1,5 +1,5 @@
 import { render } from "@testing-library/react";
-import ModalEpisodesList from "../ModalEpisodesList";
+import ModalEpisodesList from "./ModalEpisodesList";
 import { QueryClient, QueryClientProvider } from "react-query";
 
 describe("ModalEpisodesList", () => {
