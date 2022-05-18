@@ -1,15 +1,12 @@
-import Image from 'next/image';
-import Link from 'next/link';
-import { HeaderProps } from '../../interfaces';
+import Image from "next/image";
+import { HeaderProps } from "../../interfaces";
 
-import { HeaderWrapper, HeaderSide, HeaderText } from './styles';
+import { HeaderWrapper, HeaderSide, HeaderText } from "./styles";
 
 const Header = ({ urlLogo, text }: HeaderProps) => (
   <HeaderWrapper>
-    <HeaderSide style={{ cursor: 'pointer'}}>
-      <Link href='/'>
-          <Image src={urlLogo} width="85" height="85" />
-      </Link>
+    <HeaderSide style={{ cursor: "pointer" }}>
+      <Image src={urlLogo} width="85" height="85" alt="Header Logo" />
     </HeaderSide>
     <HeaderSide>
       <HeaderText>{text}</HeaderText>

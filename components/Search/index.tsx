@@ -1,14 +1,13 @@
-import { useState, SyntheticEvent } from 'react';
-import { ChangeEvent } from 'react';
-import { useRouter } from 'next/router';
+import { useState, SyntheticEvent } from "react";
+import { ChangeEvent } from "react";
+import { useRouter } from "next/router";
 
-import ButtonForm from '../Button/ButtonForm';
+import ButtonForm from "../Button/ButtonForm";
 
-import { SearchContainer, SearchInput } from './styles';
-
+import { SearchContainer, SearchInput } from "./styles";
 
 const Search = () => {
-  const [inputValue, setInputValue] = useState<string>('');
+  const [inputValue, setInputValue] = useState<string>("");
   const router = useRouter();
 
   const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
@@ -18,22 +17,20 @@ const Search = () => {
   const handleSubmit = (event: SyntheticEvent<HTMLFormElement>) => {
     event.preventDefault();
     router.push(`/character/${inputValue}`);
-    setInputValue('');
+    setInputValue("");
   };
 
   return (
-    <>
-      <SearchContainer onSubmit={handleSubmit}>
-        <SearchInput
-          onChange={handleChange}
-          type="text"
-          placeholder="Search by name"
-          data-testid="search"
-          value={inputValue}
-        />
-        <ButtonForm text='Search'/>
-      </SearchContainer>
-    </>
+    <SearchContainer onSubmit={handleSubmit}>
+      <SearchInput
+        onChange={handleChange}
+        type="text"
+        placeholder="Search by name"
+        data-testid="search"
+        value={inputValue}
+      />
+      <ButtonForm text="Search" />
+    </SearchContainer>
   );
 };
 
