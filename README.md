@@ -3,6 +3,7 @@
 Rick and morty wiki app developed in Next.js, React Query and Typescript
 
 ## Deployment app
+https://wiki-app-lsalazar85.vercel.app/
 
 ## Run
 
