@@ -1,5 +1,6 @@
-import { useEffect } from 'react';
-import { AnimatePresence } from 'framer-motion';
+import { useEffect } from "react";
+import { AnimatePresence } from "framer-motion";
+import { ModalProps } from "../../interfaces";
 
 import {
   Container,
@@ -9,25 +10,18 @@ import {
   CloseIcon,
   Scrollable,
   Background,
-} from './styles';
+} from "./styles";
 
-interface Props {
-  visible: boolean;
-  title: string;
-  onClose: () => void;
-  children: JSX.Element | JSX.Element[]
-}
-
-const Modal = ({ visible, title, onClose, children }: Props) => {
+const Modal = ({ visible, title, onClose, children }: ModalProps) => {
   useEffect(() => {
-    const [body] = document.getElementsByTagName('body');
+    const [body] = document.getElementsByTagName("body");
 
     if (visible) {
-      body.style.overflowY = 'hidden';
+      body.style.overflowY = "hidden";
     }
 
     return () => {
-      body.style.overflowY = 'auto';
+      body.style.overflowY = "auto";
     };
   }, [visible]);
 
@@ -45,9 +39,9 @@ const Modal = ({ visible, title, onClose, children }: Props) => {
             <Content
               key="content"
               animate={{ y: 0 }}
-              initial={{ y: '75%' }}
-              exit={{ y: '100%' }}
-              transition={{ type: 'tween' }}
+              initial={{ y: "75%" }}
+              exit={{ y: "100%" }}
+              transition={{ type: "tween" }}
             >
               <Header>
                 {title}

@@ -3,7 +3,7 @@ import { useRouter } from 'next/router';
 
 import Loader from '../../components/Loader';
 import List from '../../components/List';
-import CharacterCard from '../../components/Card/CharacterCard';
+import CharacterCard from '../characters/components/CharacterCard';
 
 import { useCharacterByName } from '../../hooks/useCharacterByName';
 import { handleScroll, setNewCharacterData } from '../../utils';

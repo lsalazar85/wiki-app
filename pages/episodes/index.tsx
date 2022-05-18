@@ -1,7 +1,7 @@
-import { useState, UIEvent } from 'react';
+import { useState } from 'react';
 
 import List from '../../components/List';
-import Index from '../../components/Card/EpisodeCard';
+import EpisodeCard from './components/EpisodeCard';
 import Loader from '../../components/Loader';
 
 import { useEpisodesByPage } from '../../hooks/useEpisodesByPage';
@@ -26,7 +26,7 @@ const Episodes = () => {
     <List onScroll={(e) => handleScroll(e, handleAddGrids, fetchNextPage)}>
       <>
         {flatEpisodesData?.slice(0, gridItems).map((data) => (
-          <Index key={data.id} data={data} />
+          <EpisodeCard key={data.id} data={data} />
         ))}
       </>
     </List>
