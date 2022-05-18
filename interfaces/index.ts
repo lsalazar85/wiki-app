@@ -1,5 +1,5 @@
-import { Character, Episode } from '../types';
-import { UIEvent } from 'react';
+import { Character, Episode } from "../types";
+import { UIEvent } from "react";
 
 export interface HeaderProps {
   urlLogo: string;
@@ -29,9 +29,16 @@ export interface ButtonProps {
 }
 
 export interface ButtonFormProps {
-  text: string
+  text: string;
 }
 
 export interface ModalListProps {
   id: string;
+}
+
+export interface ModalProps {
+  visible: boolean;
+  title: string;
+  onClose: () => void;
+  children: JSX.Element | JSX.Element[];
 }

@@ -1,9 +1,6 @@
 import { DetailsList, DetailText } from '../styles';
 import { useCharactersByEpisode } from '../../../hooks/useCharactersByEpisode';
-
-interface ModalListProps {
-  id: string;
-}
+import { ModalListProps } from '../../../interfaces'
 
 const ModalCharactersList = ({ id }: ModalListProps) => {
   const { data } = useCharactersByEpisode(id);

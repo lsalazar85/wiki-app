@@ -1,6 +1,6 @@
 import { render } from "@testing-library/react";
 import CharacterCard from "./index";
-import { mockTestCharacter } from '../mockTest'
+import { mockTestCharacter } from '../../../mocks/mockTest'
 
 describe("CharacterCard", () => {
   it("should render successfully", () => {
