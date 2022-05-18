@@ -4,4 +4,7 @@ module.exports = {
   images: {
     domains: ["houm.com", "rickandmortyapi.com", "cutewallpaper.org"],
   },
+  compiler: {
+    styledComponents: true,
+  },
 };
