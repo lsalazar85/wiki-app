@@ -1,12 +1,12 @@
-import Head from 'next/head';
+import Head from "next/head";
 
-import Header from '../Header';
-import Filter from '../Filter';
+import Header from "../Header";
+import Filter from "../Filter";
 
-import { LOGO_URL } from '../../constants/urls';
-import { LayoutProps } from '../../interfaces';
+import { LOGO_URL } from "../../constants/urls";
+import { LayoutProps } from "../../interfaces";
 
-import { LayoutWrapper, Main, Section } from '../../styles/styles';
+import { LayoutWrapper, Main, Section } from "../../styles/styles";
 
 const Layout = ({ children }: LayoutProps) => (
   <Main>

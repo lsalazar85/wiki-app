@@ -2,6 +2,6 @@
 module.exports = {
   reactStrictMode: true,
   images: {
-    domains: ['houm.com', 'rickandmortyapi.com'],
+    domains: ["houm.com", "rickandmortyapi.com", "cutewallpaper.org"],
   },
-}
+};
