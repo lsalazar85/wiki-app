@@ -1,15 +1,16 @@
-import {LoaderContainer, LoaderImage } from './styles'
+import { LoaderContainer, LoaderImage } from "./styles";
+import { URL_LOADER_IMG } from "../../constants/urls";
 
 const Loader = () => (
-    <LoaderContainer>
-      <LoaderImage
-          src="/images/rick.png"
-          alt="Loader Icon"
-          layout="intrinsic"
-          width={90}
-          height={90}
-      />
-    </LoaderContainer>
-)
+  <LoaderContainer>
+    <LoaderImage
+      src={URL_LOADER_IMG}
+      alt="Loader Icon"
+      layout="intrinsic"
+      width={170}
+      height={170}
+    />
+  </LoaderContainer>
+);
 
-export default Loader
+export default Loader;

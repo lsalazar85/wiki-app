@@ -23,7 +23,7 @@ export const ButtonElement = styled.div`
   }
 `;
 
-export const ButtonForm = styled.button`
+export const ButtonFormWrapper = styled.button`
   width: 150px;
   background: ${colors.Beige};
   color: ${colors.Black};

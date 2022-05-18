@@ -1,9 +1,5 @@
-/**
- * @jest-environment jsdom
- */
-
 import { render  } from '@testing-library/react'
-import Loader from "../components/Loader";
+import Loader from "./index";
 
 describe('Loader', () => {
     it('should render successfully', () => {
