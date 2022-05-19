@@ -1,16 +1,19 @@
-import { useState } from 'react';
+import { useState } from "react";
 
-import List from '../../components/List';
-import CharacterCard from '../../components/Card/CharacterCard';
-import Loader from '../../components/Loader';
+import List from "../../components/List";
+import CharacterCard from "../../components/Card/CharacterCard";
+import Loader from "../../components/Loader";
 
-import { useCharactersByPage } from '../../hooks/useCharactersByPage';
+import { useInfinityScrollPage } from "../../hooks/useInfinityScrollPage";
 
-import { handleScroll, setNewCharacterData } from '../../utils';
+import { handleScroll, setNewCharacterData } from "../../utils";
 
 const Characters = () => {
   const [gridItems, setGridItems] = useState<number>(10);
-  const { data, fetchNextPage, isLoading } = useCharactersByPage('character');
+  const { data, fetchNextPage, isLoading } = useInfinityScrollPage(
+    "characters-pages",
+    "character"
+  );
 
   const flatCharactersData = data?.pages.flatMap((character) =>
     setNewCharacterData(character.results)

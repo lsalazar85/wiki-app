@@ -1,5 +1,5 @@
 import { render } from "@testing-library/react";
-import ModalCharactersList from './ModalCharacters';
+import ModalCharactersList from './index';
 import { QueryClient, QueryClientProvider } from "react-query";
 
 describe("ModalCharactersList", () => {

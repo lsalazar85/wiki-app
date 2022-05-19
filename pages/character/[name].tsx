@@ -1,14 +1,15 @@
-import { useState } from 'react';
-import { useRouter } from 'next/router';
+import { useState } from "react";
+import { useRouter } from "next/router";
 
-import Loader from '../../components/Loader';
-import List from '../../components/List';
-import CharacterCard from '../../components/Card/CharacterCard';
+import Loader from "../../components/Loader";
+import List from "../../components/List";
+import CharacterCard from "../../components/Card/CharacterCard";
 
-import { useCharacterByName } from '../../hooks/useCharacterByName';
-import { handleScroll, setNewCharacterData } from '../../utils';
+import { useCharacterByName } from "../../hooks/useCharacterByName";
 
-import { DataNotFound } from '../../styles/styles';
+import { handleScroll, setNewCharacterData } from "../../utils";
+
+import { DataNotFound } from "../../styles/styles";
 
 const Name = () => {
   const router = useRouter();
