@@ -1,9 +1,9 @@
-import { useInfiniteQuery } from 'react-query';
-import { getFetchingDataByPage } from '../services/getFetchingDataByPage';
+import { useInfiniteQuery } from "react-query";
+import { getFetchingDataByPage } from "../services/getFetchingDataByPage";
 
-export const useCharactersByPage = (type: string) => {
+export const useInfinityScrollPage = (query: string, type: string) => {
   const result = useInfiniteQuery(
-    ['characters-pages'],
+    [`${query}`],
     ({ pageParam = 1 }) => getFetchingDataByPage(pageParam, `${type}`),
     {
       getNextPageParam: (lastPage, pages) => {

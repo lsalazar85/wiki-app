@@ -1,16 +1,17 @@
-import { useState } from 'react';
+import { useState } from "react";
 
-import List from '../../components/List';
-import EpisodeCard from '../../components/Card/EpisodeCard';
-import Loader from '../../components/Loader';
+import List from "../../components/List";
+import EpisodeCard from "../../components/Card/EpisodeCard";
+import Loader from "../../components/Loader";
 
-import { useEpisodesByPage } from '../../hooks/useEpisodesByPage';
-import { handleScroll, setNewEpisodeData } from '../../utils';
+import { useInfinityScrollPage } from "../../hooks/useInfinityScrollPage";
+
+import { handleScroll, setNewEpisodeData } from "../../utils";
 
 const Episodes = () => {
   const [gridItems, setGridItems] = useState<number>(10);
 
-  const { data, fetchNextPage, isLoading } = useEpisodesByPage('episode');
+  const { data, fetchNextPage, isLoading } = useInfinityScrollPage('episodes-pages', "episode");
 
   const flatEpisodesData = data?.pages.flatMap((episode) =>
     setNewEpisodeData(episode.results)

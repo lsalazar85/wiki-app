@@ -1,9 +1,9 @@
-import { DetailsList, DetailText } from '../styles';
-import { ModalListProps } from '../../../interfaces'
-import { useEpisodesByCharacter } from '../../../hooks/useEpisodesByCharacter'
+import { DetailsList, DetailText } from "../../Card/styles";
+import { ModalListProps } from "../../../interfaces";
+import { useArrayUrls } from "../../../hooks/useShowArrayUrls";
 
 const ModalEpisodesList = ({ id }: ModalListProps) => {
-  const { data } = useEpisodesByCharacter(`${id}`)
+  const { data } = useArrayUrls('episode-characters',`${id}`,'episode');
 
   return (
     <DetailsList>

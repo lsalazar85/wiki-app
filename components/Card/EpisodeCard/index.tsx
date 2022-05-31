@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { CardWrapper, CardInfo, Name, ItemInfo } from '../styles';
 
 import Modal from '../../Modal';
-import ModalCharactersList from '../CharacterCard/ModalCharacters';
+import ModalCharactersList from '../../Modal/ModalCharactersList';
 
 import { EpisodeCardProps } from '../../../interfaces';
 
